@@ -32,7 +32,7 @@
 
 #header .inner .gnb>ul>li>a {
     padding: 0 40px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 100px;
     display: block;
@@ -74,7 +74,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 48px;
-    color: #444;
+    color: #222;
     padding: 0 40px 0 0;
 }
 
@@ -285,6 +285,12 @@
 
 @media(max-width: 480px) {
 
+    #header,
+    #header.on,
+    #header.menu_on {
+        border-bottom: none !important;
+    }
+
     #header .inner .logo a,
     #header.on .inner .logo a,
     #header.menu_on .inner .logo a {
@@ -299,15 +305,16 @@
 
     #header .gnb {
         position: absolute;
-        top: 61px;
+        top: 59px;
         left: 0;
         width: 100%;
         height: calc(100vh - 60px);
-        padding: 0 16px;
+        padding: 0;
         background: var(--white-color);
         visibility: hidden;
         opacity: 0;
         transition: 0.5s;
+        overflow: scroll;
     }
 
     #header .gnb.on {
@@ -327,14 +334,18 @@
 
     #header .inner .gnb>ul>li>a {
         padding: 0;
-        line-height: 48px;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 56px;
+        text-align: center;
+
     }
 
     #header .sub {
         position: static;
         padding: 0;
         height: auto;
+        border: none;
+        background: #f9f9f9;
     }
 
     #header .sub::after {
@@ -346,11 +357,17 @@
     }
 
     #header .sub>li>a {
-        font-size: 14px;
-        font-weight: 500;
-        text-align: left;
-        line-height: 32px;
         padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: center;
+        border-top: 1px solid #f1f1f1;
+        color: #222;
+    }
+
+    #header .sub>li:first-child>a {
+        border: none;
     }
 
     #header .sub_list {
@@ -358,14 +375,18 @@
         position: static;
         width: 100%;
         opacity: 1;
+        max-height: 200px;
+        overflow: scroll;
         visibility: visible;
+        background: #f1f1f1;
     }
 
     #header .sub_list>li>a {
         padding: 0;
         font-size: 14px;
         font-weight: 300;
-        line-height: 32px;
+        line-height: 40px;
+        text-align: center;
     }
 }
 
