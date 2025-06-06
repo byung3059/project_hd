@@ -27,7 +27,7 @@ $(function () {
         if ($('#header .inner .gnb').hasClass('on')) {
             e.preventDefault(); // a링크 이벤트 없애기
 
-            $(this).next().stop().slideToggle();
+            $(this).next().stop().slideToggle(300);
         }
     })
 
@@ -38,7 +38,7 @@ $(function () {
         if ($('#header .inner .gnb').hasClass('on')) {
             e.preventDefault(); // a링크 이벤트 없애기
 
-            $(this).next().stop().slideToggle();
+            $(this).next().stop().slideToggle(300);
         } else ($('#header .gnb .sub').removeAttr('style'));
 
     })
