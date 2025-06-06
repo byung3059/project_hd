@@ -531,35 +531,38 @@
 
 @media(max-width: 480px) {
     .main_content .content_itm_box>* {
-        flex: unset;
-        width: 100%;
-        height: 40px;
+        transition: 0.5s;
     }
 
-    .main_content .content_itm_box .itm.on {
-        flex: unset;
-        height: 300px;
-    }
+    .main_content .content_itm_box .itm.on {}
 
     .main_content .content_itm_box .itm .slg p {
-        writing-mode: unset;
         font-size: 14px;
     }
 
-    .main_content .content_itm_box {
-        flex-direction: column;
+    .main_content .content_itm_box .itm {
+        height: 320px;
+    }
+
+    .main_content .content_itm_box .itm.on {
+        flex: 8;
     }
 
     .main_content .content_itm_box .itm.on .slg p {
         font-size: 14px;
         line-height: 14px;
+        width: 300px;
+        text-align: center;
     }
 
     .main_content .content_itm_box .itm.on .slg strong {
         font-size: 16px;
         line-height: 24px;
-        width: 400px;
+        width: 300px;
+
     }
 }
+
+
 
 /* 메인 컨텐트 끝*/
