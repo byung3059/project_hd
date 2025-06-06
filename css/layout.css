@@ -1,5 +1,6 @@
 :root {
     --pri-color: #002F87;
+    --sec-color: #00E600;
     --white-color: #ffffff;
     --black-color: #222222;
     --p-color: #444444;
@@ -45,7 +46,6 @@
     padding: 100px 0;
 }
 
-
 .tit {
     margin: 0 0 40px 0;
 }
@@ -63,4 +63,53 @@
     line-height: 16px;
     font-weight: 700;
     color: var(--pri-color);
+}
+
+@media(max-width: 480px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    .btn_w {
+        width: 120px;
+        height: 40px;
+    }
+
+    .btn_w a {
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    .btn_b {
+        width: 120px;
+        height: 40px;
+    }
+
+    .btn_b a {
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    .default {
+        padding: 40px 0;
+    }
+
+    .tit {
+        margin: 0 0 24px 0;
+    }
+
+    .tit h2 {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        color: var(--black-color);
+    }
+
+    .tit p {
+        margin: 0 0 16px 0;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        color: var(--pri-color);
+    }
 }
